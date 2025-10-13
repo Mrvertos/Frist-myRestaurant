@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+	font-family: YekanBakh;
+	font-style: normal;
+	font-weight: 100;
+	src: url('fonts/woff/YekanBakhFaNum-thin.woff') format('woff'),   
+	url('fonts/woff2/YekanBakhFaNum-thin.woff2') format('woff2');		
+}
+
+@font-face {
+    font-family: YekanBakh;
+	font-style: normal;
+	font-weight: 300;
+	src: url('fonts/woff/YekanBakhFaNum-Light.woff') format('woff'),   
+	url('fonts/woff2/YekanBakhFaNum-Light.woff2') format('woff2');	
+}
+
+@font-face {
+	font-family: YekanBakh;
+	font-style: normal;
+	font-weight: normal;
+	src: url('fonts/woff/YekanBakhFaNum-Regular.woff') format('woff'),   
+	url('fonts/woff2/YekanBakhFaNum-Regular.woff2') format('woff2');		 
+}
+
+@font-face {
+    font-family: YekanBakh;
+	font-style: normal;
+	font-weight: 600;
+	src: url('fonts/woff/YekanBakhFaNum-SemiBold.woff') format('woff'),   
+	url('fonts/woff2/YekanBakhFaNum-SemiBold.woff2') format('woff2');		 
+}
+
+@font-face {
+	font-family: YekanBakh;
+	font-style: normal;
+	font-weight: bold;
+	src: url('fonts/woff/YekanBakhFaNum-Bold.woff') format('woff'),   
+	url('fonts/woff2/YekanBakhFaNum-Bold.woff2') format('woff2'); 
+}
+
+@font-face {
+	font-family: YekanBakh;
+	font-style: normal;
+	font-weight: 800;
+	src: url('fonts/woff/Yekan Bakh FaNum-ExtraBold.woff') format('woff'),   
+	url('fonts/woff2/Yekan Bakh FaNum-ExtraBold.woff2') format('woff2');		 
+}
+
+@font-face {
+	font-family: YekanBakh;
+	font-style: normal;
+	font-weight: 900;
+	src: url('fonts/woff/Yekan Bakh FaNum-Black.woff') format('woff'),   
+	url('fonts/woff2/Yekan Bakh FaNum-Black.woff2') format('woff2');		 
+}
+
+@font-face {
+	font-family: YekanBakh;
+	font-style: normal;
+	font-weight: 950;
+	src: url('fonts/woff/Yekan Bakh FaNum-ExtraBlack.woff') format('woff'),   
+	url('fonts/woff2/Yekan Bakh FaNum-ExtraBlack.woff2') format('woff2');		 
+}
+
+body {
+    font-family: YekanBakh;
+    background: #000;
+}
+
+/* Header Styles */
+#header {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    border-radius: 20px;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    background: #94AE89;
+    z-index: 1000;
+}
+
+#header .header-title {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-size: 2.1875rem;
+    color: #206301;
+    font-weight: 700;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#header .header-title img{
+    width: 60px;
+}
+
+/* Navbar styles */
+
+#header .navbar .nav-list{
+    display: flex;
+    list-style: none;
+    gap: 0px;
+    font-weight: 700;
+    align-items: stretch;
+    justify-content: space-between;
+}
+#header .navbar .nav-list a{
+    color: white;
+    font-size: 1.25rem;
+    padding: 30px 20px;
+    text-decoration: none;
+    &:hover{
+        transition: all ease 0.1s;
+        border-bottom: 5px solid #ffffff;
+    }
+}
+
+/* btn header */
+#header .header-btn{
+    display: flex;
+    gap: 10px;
+}
+
+#header .header-btn-call,
+#header .header-btn-mode{
+    border: none;
+    color: white;
+    background: #206301;
+    border-radius: 10px;
+    padding: 5px 2px;
+    &:hover {
+        transition: all ease 0.3s;
+        rotate: 45deg;
+    }
+}
+
+/* -- Main -- */
+#main {
+    background: url(images/pattern.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
