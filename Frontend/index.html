@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مُروار</title>
+    <title>مارکــــوس</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="images/logo.svg" type="image/png" />
+    <!-- icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -19,33 +20,135 @@
     <!-- Header -->
     <header id="header">
       <div>
+
         <a href="index.html" class="header-title">
           <img src="./images/logo.svg" alt="logo" />
           <p class="text-logo">مارکوس</p>
         </a>
+
       </div>
+      
       <!-- Navbar -->
       <nav>
+
         <div class="navbar">
+
           <ul class="nav-list">
             <li><a href="index.html">خانه</a></li>
             <li><a href="">منو</a></li>
             <li><a href="">وبلاگ</a></li>
             <li><a href="">درباره ما</a></li>
           </ul>
+
         </div>
+
       </nav>
+
       <div class="header-btn">
-        <button class="header-btn-mode">
-          <i class="far fa-sun" style="font-size: 22px"></i>
-        </button>
+        
         <button class="header-btn-call" onclick="number()">
           <i class="fa fa-phone-square" style="font-size: 28px"></i>
         </button>
+        
+        <button class="header-btn-hamburger">
+          <i class='fas fa-th-list' style='font-size:28px'></i>
+        </button>
+
       </div>
     </header>
+    <!-- End Header -->
+
+    
+
     <!-- Main -->
-    <main id="main"></main>
+    <main id="main">
+
+      <!-- section main -->
+      <section class="main-section">
+
+        <div class="section-main-texts">
+
+          <h1 class="main-title">رستوران مارکوس</h1>
+          <span class="main-p">بهترین غذا های ایران</span>
+          <a href="#" class="main-gomenu">منو رستوران</a>
+
+        </div>
+
+      </section>
+
+      <!-- type food -->
+
+       <section class="foods">
+
+        <div class="food-type">
+
+          <div>
+            <img src="./images/fastfood.jpg" alt="fastfood">
+          </div>
+
+          <div class="food-text">
+            <h2>فست فود</h2>
+            <button><a href="#">منو</a></button>
+          </div>
+
+        </div>
+
+        <div class="food-type">
+
+          <div>
+            <img src="./images/fastfood.jpg" alt="fastfood">
+          </div>
+
+          <div class="food-text">
+            <h2>ایتالیایی</h2>
+            <button><a href="#">منو</a></button>
+          </div>
+          
+        </div>
+
+        <div class="food-type">
+
+          <div>
+            <img src="./images/fastfood.jpg" alt="fastfood">
+          </div>
+
+          <div class="food-text">
+            <h2>ایرانی</h2>
+            <button><a href="#">منو</a></button>
+          </div>
+        </div>
+
+        <div class="food-type">
+
+          <div>
+            <img src="./images/fastfood.jpg" alt="fastfood">
+          </div>
+
+          <div class="food-text">
+            <h2>نوشیدنی ها</h2>
+            <button><a href="#">منو</a></button>
+          </div>
+
+        </div>
+        
+      </section>
+
+      <!-- feedback -->
+      <section class="feedback">
+
+        <div class="feed-container">
+
+          <i class='fas fa-user-circle feed-logo' style='font-size:90px'></i>
+          <span class="feed-name">Taleb</span>
+          <span>⭐⭐⭐⭐⭐</span>
+          <p class="feed-dis">رستوران به شدت جذاب و پر از بچه بود</p>
+
+        </div>
+
+      </section>
+    </main>
+    <!-- End Main -->
+
 
     <script src="./main.js"></script>
   </body>
