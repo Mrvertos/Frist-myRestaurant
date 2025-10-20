@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 100;
+  src: url("fonts/woff/YekanBakhFaNum-thin.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/woff/YekanBakhFaNum-Light.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/woff/YekanBakhFaNum-Regular.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/woff/YekanBakhFaNum-SemiBold.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/woff/YekanBakhFaNum-Bold.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/woff/Yekan Bakh FaNum-ExtraBold.woff") format("woff"),
+    url("fonts/woff2/Yekan Bakh FaNum-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/woff/Yekan Bakh FaNum-Black.woff") format("woff"),
+    url("fonts/woff2/Yekan Bakh FaNum-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 950;
+  src: url("fonts/woff/Yekan Bakh FaNum-ExtraBlack.woff") format("woff"),
+    url("fonts/woff2/Yekan Bakh FaNum-ExtraBlack.woff2") format("woff2");
+}
+
+
+body{
+    font-family: yekanbakh;
+    background: linear-gradient(45deg,#ff5e00,#f1b10f);
+    height: 100vh;
+}
+
+/* Start styles */
+#login{
+    width: 100%;
+    background: #ffffff;
+    padding: 50px 0;
+    padding-top: 0;
+    margin: 12vh 20px;
+    border-radius: 0.5rem;
+}
+
+@media(min-width: 760px){
+    #login{
+        width: 400px;
+        margin: 15vh auto;
+        margin-right: 0;
+        border-radius: 0.5rem 0 0 0.5rem;
+
+    }
+}
+
+/* texts */
+
+#login .login-text .back-home{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: #d40f0f;
+    margin: 0 30px;
+    transition: transform ease 0.3s;
+    &:hover{
+        transform: translateX(3px);
+    }
+}
+
+#login .login-text{
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+/* input & Lable */
+
+#login .login-info{
+    margin: 0 55px;
+}
+
+#login .login-password label,
+#login .login-tel label,
+#login .login-username label{
+    display: block;
+    margin-top: 13px;
+    margin-bottom: 5px;
+    
+}
+
+#login .login-password input,
+#login .login-tel input,
+#login .login-username input{
+    font-family: yekanbakh;
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 0.5rem;
+    &:focus{
+        outline: none;
+        outline: 3px solid #f1b10f;
+        border: transparent 2px solid;
+    }
+}
+
+/* login button */
+#login .login-btn{
+    cursor: pointer;
+    width: 100%;
+    font-family: yekanbakh;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 10px;
+
+    background: #f1b10f;
+    color: white;
+    border: none;
+    transition: background ease 0.3s,
+    transform ease 0.3s;
+    &:hover{
+        background: #ffbc11;
+        transform: translateY(-2px);
+    }
+
+}
+
+/* text not account */
+#login .login-isnot {
+    display: flex;
+    justify-content: space-between;
+}
+
+#login .login-isnot a {
+    text-decoration: none;
+    color: #f1b10f;
+    font-weight: 600;
+    transition: color ease 0.3s;
+    &:hover{
+        color: #ffbc11;
+    }
+}
+
+
+/* For Ads */
+.full-continer {
+    display: flex;
+}
+
+@media(min-width: 760px)
+{
+    .ads {
+        background: url(../assets/images/pattern.jpg);
+        background-size: cover;
+        
+        width: 200px;
+        margin: 15vh auto;
+        margin-left: 0;
+        padding: 50px 0;
+        border-radius: 0 0.5rem 0.5rem 0 ;
+        /* background: #000000; */
+    }
+}

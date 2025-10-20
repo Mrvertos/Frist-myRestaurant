@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مارکــــوس</title>
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/weblog.css" />
+    <link rel="icon" href="./assets/images/logo.svg" type="image/png" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div>
+
+        <a href="index.html" class="header-title">
+          <img src="./styles/images/logo.svg" alt="logo" />
+          <p class="text-logo">مارکوس</p>
+        </a>
+
+      </div>
+      
+      <!-- Navbar -->
+      <nav>
+
+        <div class="navbar">
+
+          <ul class="nav-list">
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="">منو</a></li>
+            <li><a href="">وبلاگ</a></li>
+            <li><a href="">درباره ما</a></li>
+          </ul>
+
+        </div>
+
+      </nav>
+
+      <div class="header-btn">
+        
+        <button class="header-btn-call" onclick="number()">
+          <i class="fa fa-phone-square" style="font-size: 28px"></i>
+        </button>
+        
+        <a href="./signin.html">
+          <button class="header-btn-account">
+            <i class='fas fa-user-circle' style='font-size:28px'></i>
+          </button>
+        </a>
+
+        <button class="header-btn-hamburger">
+          <i class='fas fa-th-list' style='font-size:28px'></i>
+        </button>
+
+      </div>
+    </header>
+    <!-- End Header -->
+
+    
+
+    <!-- Main -->
+    <main id="main">
+
+      <!-- Intro -->
+      <section id="blog-intro">
+        <h1>وبلاگ مارکــــوس</h1>
+        <p>دنیایی از طعم، داستان و الهام از آشپزخانه ما تا میز شما 🍝</p>
+      </section>
+
+      <!-- Blog Cards -->
+        <section class="blog-list">
+            <article class="blog-card">
+
+                <div class="blog-image">
+                    <img src="./assets/images/blog1.jpg" alt="blog1" />
+                    <div class="overlay"></div>
+                    <span class="category">آشپزی حرفه‌ای</span>
+                </div>
+
+                <div class="blog-content">
+
+                    <h2>راز پخت استیک کامل!</h2>
+                    <p>اگر عاشق گوشت و طعم ناب استیک هستید، این مقاله مخصوص شماست...</p>
+                    <a href="#" class="blog-btn">ادامه مطلب</a>
+
+                </div>
+
+            </article>
+
+            <article class="blog-card">
+
+                <div class="blog-image">
+
+                    <img src="./assets/images/blog2.jpg" alt="blog2" />
+                    <div class="overlay"></div>
+                    <span class="category">پیتزا و ایتالیا</span>
+
+                </div>
+
+                <div class="blog-content">
+
+                    <h2>پیتزا ناپولی با طعم اصیل 🇮🇹</h2>
+                    <p>نان نرم، سس گوجه تازه، پنیر کشدار... تجربه‌ای که فراموش نمی‌کنید.</p>
+                    <a href="#" class="blog-btn">ادامه مطلب</a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+      <!-- Newsletter -->
+      <section class="newsletter">
+
+        <h2>عضویت در خبرنامه</h2>
+        <p>اولین نفری باشید که از اخبار، تخفیف‌ها و منوهای جدید مطلع می‌شود 🍷</p>
+
+        <a href="./signin.html">
+            <button type="submit">عضویت</button>
+        </a>
+
+      </section>
+
+      <!-- feedback -->
+      <section class="feedback">
+
+        <h2 class="feed-title">نظرات</h2>
+
+        <div class="feed-container">
+
+            <div class="feed-content">
+    
+                <i class='fas fa-user-circle feed-logo' style='font-size:90px'></i>
+                <span class="feed-name">Taleb</span>
+                <span>⭐⭐⭐⭐⭐</span>
+                <p class="feed-dis">رستوران به شدت جذاب و پر از بچه بود</p>
+    
+            </div>
+
+        </div>
+
+      </section>
+      
+    </main>
+    <!-- End Main -->
+
+  <footer id="footer">
+    <div class="footer-container">
+      <ul class="footer-links">
+        <li><a href="#">دربــــــــــــــــــاره ما</a></li>
+        <li><a href="#">تمـــــــــــاس با ما</a></li>
+        <li><a href="#">سفارش آنلاین</a></li>
+      </ul>
+      <iframe class="footer-map" 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.083920148319!2d51.64989485984281!3d32.630588573834515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fbc37c82378e9d9%3A0x4ca3ac864bd814b6!2z2K7Yp9mG2Ycg2YXYp9ix2qnZiNiz!5e0!3m2!1sfa!2s!4v1760974487595!5m2!1sfa!2s"  
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="footer-copyright">© رستوران مارکــــوس —   ساخته شده با 🍦.</p>
+  </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

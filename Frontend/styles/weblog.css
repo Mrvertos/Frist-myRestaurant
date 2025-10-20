@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 100;
+  src: url("fonts/woff/YekanBakhFaNum-thin.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/woff/YekanBakhFaNum-Light.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/woff/YekanBakhFaNum-Regular.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/woff/YekanBakhFaNum-SemiBold.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/woff/YekanBakhFaNum-Bold.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/woff/Yekan Bakh FaNum-ExtraBold.woff") format("woff"),
+    url("fonts/woff2/Yekan Bakh FaNum-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/woff/Yekan Bakh FaNum-Black.woff") format("woff"),
+    url("fonts/woff2/Yekan Bakh FaNum-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 950;
+  src: url("fonts/woff/Yekan Bakh FaNum-ExtraBlack.woff") format("woff"),
+    url("fonts/woff2/Yekan Bakh FaNum-ExtraBlack.woff2") format("woff2");
+}
+
+
+body {
+  font-family: YekanBakh;
+  background: #ffffff;
+}
+
+
+/* Main --- */
+
+/* --- Blog Page Styles --- */
+
+#blog-intro {
+    text-align: center;
+    margin-top: 160px;
+    margin-bottom: 60px;
+    padding-bottom: 50px;
+    border-bottom: #f1b10f solid 3px;
+}
+
+#blog-intro h1 {
+    color: #941b0c;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#blog-intro p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+
+/* Blog List Mian */
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.blog-card {
+    position: relative;
+    background: #fff;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    width: 340px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    transition: all 0.4s ease;
+    transform: translateY(0);
+    &:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(241,177,15,0.4);
+    }
+}
+
+
+.blog-image {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.15);
+}
+
+.blog-image .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(148,27,12,0.8), rgba(0,0,0,0));
+    opacity: 0.8;
+}
+
+.blog-image .category {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: #f1b10f;
+    color: #941b0c;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    border-radius: 0.5rem;
+}
+
+.blog-content {
+    padding: 40px;
+}
+
+.blog-content h2 {
+    color: #941b0c;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.blog-content p {
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.blog-btn {
+    position: relative;
+    background: transparent;
+    color: #941b0c;
+    border: 2px solid #f1b10f;
+    font-weight: 700;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: all 0.4s ease;
+    &:hover{
+        background: #f1b10f;
+    }
+}
+
+
+/* Newsletter */
+.newsletter {
+    box-shadow: 0 0 10px #bdbdbd inset;
+    text-align: center;
+    background: #f9f9f9;
+    background: #ffd3656e;
+    padding: 60px 20px;
+}
+
+.newsletter h2 {
+    color: #941b0c;
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.newsletter button {
+    background: #941b0c;
+    color: #fff;
+    font-family: YekanBakh;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 12px 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+    background: #f1b10f;
+    }
+}
+
+
+
+/* Main Feedback */
+
+#main .feedback {
+    background: url(./assets/images/commentpattern.jpg);
+    margin-top: 100px;
+    padding: 80px 0;
+    background-size: 1000px;
+    object-fit: cover;
+}
+
+#main .feedback .feed-title{
+    text-align: center;
+    color: #941b0c;
+    margin-bottom: 30px;
+}
+
+#main .feedback .feed-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#main .feedback .feed-content{
+    box-shadow: 0 0 10px #383838;
+    width: 300px;
+    margin: 10px;
+    border-radius: 0.5rem;
+    padding: 50px;
+    text-align: center;
+    background: #ffffff;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    &:hover{
+        transform: scale(1.05,1.05);
+        transition: all 0.5s;
+    }
+}
+
+#main .feedback .feed-content .feed-logo{
+    display: block;
+    margin: 0 auto;
+}
+
+#main .feedback .feed-content .feed-name{
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* End Main --- */

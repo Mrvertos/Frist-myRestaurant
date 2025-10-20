@@ -1,0 +1,124 @@
+/* ّFooter Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 100;
+  src: url("fonts/woff/YekanBakhFaNum-thin.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/woff/YekanBakhFaNum-Light.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/woff/YekanBakhFaNum-Regular.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/woff/YekanBakhFaNum-SemiBold.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/woff/YekanBakhFaNum-Bold.woff") format("woff"),
+    url("fonts/woff2/YekanBakhFaNum-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/woff/Yekan Bakh FaNum-ExtraBold.woff") format("woff"),
+    url("fonts/woff2/Yekan Bakh FaNum-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/woff/Yekan Bakh FaNum-Black.woff") format("woff"),
+    url("fonts/woff2/Yekan Bakh FaNum-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: YekanBakh;
+  font-style: normal;
+  font-weight: 950;
+  src: url("fonts/woff/Yekan Bakh FaNum-ExtraBlack.woff") format("woff"),
+    url("fonts/woff2/Yekan Bakh FaNum-ExtraBlack.woff2") format("woff2");
+}
+
+
+#footer {
+    font-family: YekanBakh;
+    box-shadow: 0px 0px 10px #383838;
+    border-top: #f1b10f solid 5px;
+    background: #941b0c;
+}
+
+#footer .footer-container{
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#footer .footer-links{
+  margin: 0 30px;
+  line-height: 3rem;
+  list-style: none;
+}
+
+@media(max-width: 360px){
+  #footer .footer-links{
+    margin: 0px auto;
+    margin-bottom: 30px;
+  }
+
+}
+
+#footer .footer-links a{
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color ease 0.3s;
+  &:hover{
+    color: #f1b10f;
+  }
+}
+
+#footer .footer-copyright {
+  background: #000;
+  text-align: center;
+  color:  #f5f5f5;
+  padding: 20px;
+}
+
+#footer .footer-map{
+  flex: auto;
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius: 0.5rem;
+  border: none;
+}
