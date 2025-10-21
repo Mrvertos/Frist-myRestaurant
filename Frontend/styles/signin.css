@@ -83,6 +83,7 @@ body{
     padding-top: 0;
     margin: 12vh 20px;
     border-radius: 0.5rem;
+    box-shadow: -10px 0px 0px #d40f0f;
 }
 
 @media(min-width: 760px){
@@ -101,7 +102,6 @@ body{
     display: block;
     text-align: left;
     text-decoration: none;
-    box-shadow: -10px 0px 0px #d40f0f;
     color: #d40f0f;
     margin: 0 30px;
     transition: transform ease 0.3s;
