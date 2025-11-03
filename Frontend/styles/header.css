@@ -70,19 +70,27 @@
 
 
 /* Header Styles */
+
 #header {
-    font-family: YekanBakh;
+  font-family: YekanBakh;
   display: flex;
   position: fixed;
   top: 20px;
   left: 20px;
   right: 20px;
-  border-radius: 20px;
+  border-radius: 1rem;
   padding: 20px 40px;
   justify-content: space-between;
   align-items: center;
   background: #f1b10f;
   z-index: 1000;
+  box-shadow: 0 0 px #580000;
+}
+
+@media(max-width: 400px){
+  #header {
+    padding: 20px 10px;
+  }
 }
 
 #header.scrolled {

@@ -12,3 +12,13 @@ Update v0.5
         Account
         login And Signup
         responsive
+
+Update v0.8
+    -- Frontend
+    Add Menu
+    new img for foods
+
+    reponsive :
+    header
+    menu
+    index

@@ -95,7 +95,7 @@ body {
   color: white;
   background: #941b0c;
   align-items: center;
-  margin: 0px 100px;
+  margin: 20px;
   margin-top: 250px;
   transition: box-shadow ease 0.3s;
     &:hover{
