@@ -164,11 +164,15 @@ body {
   padding: 10px 20px;
   background: #941b0c;
   cursor: pointer;
-  &:hover{
-        transform: scale(1.05,1.05);
-        transition: all 0.5s;
-  }
+  transition-property: transform;
+  transition: box-shadow ease 0.3s;
 }
+
+#main .foods .food-type button:hover{
+  box-shadow: 0px 4px 0px #f5f5f5;
+
+}
+
 
 #main .foods .food-type button a{
   text-decoration: none;
@@ -178,4 +182,5 @@ body {
 #main .foods .food-type img{
   border-radius: 0.5rem;
   width: 200px;
+  border: #ffffff solid 5px;
 }
