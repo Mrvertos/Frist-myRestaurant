@@ -67,3 +67,45 @@
   src: url("fonts/woff/Yekan Bakh FaNum-ExtraBlack.woff") format("woff"),
     url("fonts/woff2/Yekan Bakh FaNum-ExtraBlack.woff2") format("woff2");
 }
+
+
+body{
+  font-family: YekanBakh;
+  font-weight: 400;
+}
+
+.aboutUs{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin: 20px;
+  margin-top: 180px;
+  padding: 20px;
+  border-radius: 0.5rem;
+  color: whitesmoke;
+  background: #941b0c;
+}
+
+.aboutUs img{
+  width: 
+  50vh;
+  border-radius: 0.5rem;
+  object-fit: contain;
+}
+.aboutUs .about-dis{
+  text-align:justify;  
+  word-wrap: break-word;
+}
+.aboutUs .about-more a{
+  display: block;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 5px 20px;
+  border: 2px solid #f1b10f;
+  color: whitesmoke;
+  text-decoration: none;
+  transition: background ease 0.3s;
+  &:hover{
+    background: #f1b10f;
+  }
+}

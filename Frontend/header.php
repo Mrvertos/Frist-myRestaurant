@@ -23,10 +23,10 @@
             <div class="navbar">
 
             <ul class="nav-list">
-                <li><a href="index.html">خانه</a></li>
-                <li><a href="./menu.html">منو</a></li>
-                <li><a href="./weblog.html">وبلاگ</a></li>
-                <li><a href="./about.html">درباره ما</a></li>
+                <li><a href="index.php">خانه</a></li>
+                <li><a href="./menu.php">منو</a></li>
+                <li><a href="./weblog.php">وبلاگ</a></li>
+                <li><a href="./about.php">درباره ما</a></li>
             </ul>
 
             </div>

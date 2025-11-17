@@ -138,8 +138,8 @@
   font-size: 1.25rem;
   padding: 30px 20px;
   text-decoration: none;
+  transition: all ease 0.1s;
   &:hover {
-    transition: all ease 0.1s;
     border-bottom: 5px solid #ffffff;
   }
 }
@@ -158,9 +158,9 @@
   color: white;
   background: #941b0c;
   border-radius: 10px;
-padding: 5px 2px;
+  padding: 5px 2px;
+  transition: rotate ease 0.5s;
   &:hover {
-    transition: all 0.5s;
     rotate: 45deg;
   }
 }
