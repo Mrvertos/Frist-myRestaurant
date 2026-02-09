@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>مارکــــوس</title>
-    <link rel="stylesheet" href="./styles/signup.css" />
+    <link rel="stylesheet" href="./styles/signin.css" />
     <link rel="icon" href="./assets/images/logo.svg" type="image/png" />
     <!-- icons -->
     <link
@@ -22,15 +22,15 @@
       <section id="login">
         
         <div class="login-text">
-          <a class="back-home" href="./index.html">
+          <a class="back-home" href="./index.php">
             <i class='fas fa-arrow-right' style='font-size:20px'></i>
           </a>
           <h1>مارکـــــــوس</h1>
-          <h2>سلامــــــــــــــــــــــــــ</h2>
+          <h2>خوش برگشتی</h2>
         </div>
-        
-        <form class="login-info" action="">
-          
+  
+        <form class="login-info" action="./actions/signin_action.php" method="post">
+  
           <div class="login-username">
             <label for="username">نام کاربری</label>
             <input type="text" 
@@ -39,17 +39,7 @@
             required
             >
           </div>
-          
-          <div class="login-tel">
-            <label for="tel">شماره</label>
-            <input type="tel" 
-            name="tel" 
-            id="tel"
-            placeholder="09"
-            required>
-          </div>
-          
-          
+  
           <div class="login-password">
             <label for="password">رمزعبــــــور</label>
             <input type="password" 
@@ -57,21 +47,20 @@
             id="password"
             required>
           </div>
-          
-          
-          <button class="login-btn" type="submit">ثبت نام</button>
-          
+  
+          <button class="login-btn" type="submit">ورود</button>
+  
           <div class="login-isnot">
-            <p>آیا حساب کاربری دارید؟</p>
-            <a href="./signin.html">
-              <span>ورود</span>
+            <p>هنوز حسابی ندارید؟</p>
+            <a href="./signup.php">
+              <span>ثبت نام</span>
             </a>
           </div>
           
         </form>
       </section>
     </div>
-    
-    
+
+
   </body>
-  </html>
+</html>

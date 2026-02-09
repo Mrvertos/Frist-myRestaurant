@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>مارکــــوس</title>
-    <link rel="stylesheet" href="./styles/signin.css" />
+    <link rel="stylesheet" href="./styles/signup.css" />
     <link rel="icon" href="./assets/images/logo.svg" type="image/png" />
     <!-- icons -->
     <link
@@ -22,15 +22,15 @@
       <section id="login">
         
         <div class="login-text">
-          <a class="back-home" href="./index.html">
+          <a class="back-home" href="./signin.php">
             <i class='fas fa-arrow-right' style='font-size:20px'></i>
           </a>
           <h1>مارکـــــــوس</h1>
-          <h2>خوش برگشتی</h2>
+          <h2>سلامــــــــــــــــــــــــــ</h2>
         </div>
-  
-        <form class="login-info" action="">
-  
+        
+        <form class="login-info" action="./actions/signup_add_action.php" method="post">
+          
           <div class="login-username">
             <label for="username">نام کاربری</label>
             <input type="text" 
@@ -39,7 +39,17 @@
             required
             >
           </div>
-  
+          
+          <div class="login-tel">
+            <label for="tel">شماره</label>
+            <input type="tel" 
+            name="phonenumber" 
+            id="tel"
+            placeholder="09"
+            required>
+          </div>
+          
+          
           <div class="login-password">
             <label for="password">رمزعبــــــور</label>
             <input type="password" 
@@ -47,20 +57,29 @@
             id="password"
             required>
           </div>
-  
-          <button class="login-btn" type="submit">ورود</button>
-  
+
+          <div class="login-password">
+            <label for="repassword">تکرار رمز عبـور</label>
+            <input type="password" 
+            name="repassword" 
+            id="repassword"
+            required>
+          </div>
+          
+          
+          <button class="login-btn" type="submit">ثبت نام</button>
+          
           <div class="login-isnot">
-            <p>هنوز حسابی ندارید؟</p>
-            <a href="./signup.html">
-              <span>ثبت نام</span>
+            <p>آیا حساب کاربری دارید؟</p>
+            <a href="./signin.php">
+              <span>ورود</span>
             </a>
           </div>
           
         </form>
       </section>
     </div>
-
-
+    
+    
   </body>
-</html>
+  </html>

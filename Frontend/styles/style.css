@@ -144,7 +144,7 @@ body {
   border-radius: 0.5rem;
   transition: box-shadow ease 0.3s;
   &:hover{
-    box-shadow: 0px 7px 0px #941b0c;
+    box-shadow: -7px 0px 0px #941b0c;
   }
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 #main .foods .food-type button:hover{
-  box-shadow: 0px 4px 0px #f5f5f5;
+  box-shadow: -4px 0px 0px #f5f5f5;
 
 }
 

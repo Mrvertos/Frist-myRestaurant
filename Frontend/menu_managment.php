@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>مارکــــوس</title>
-    <link rel="stylesheet" href="./styles/menu.css" />
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />
+    <link rel="stylesheet" href="./styles/menu_managemnt.css">
     <link rel="icon" href="./assets/images/logo.svg" type="image/png" />
     <!-- icons -->
     <link
@@ -16,13 +17,46 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+        #btn-remove-icon{
+            color: whitesmoke;
+            transition: all ease 0.3s;
+            &:hover{
+                color: #bbbbbb;
+            }
+        }
+    </style>
   </head>
 
-    <body>
-        <!-- Header -->
-         <?php include 'header.php';?>
-        <!-- End Header -->
+<!-- Header -->
+    <?php include 'header.php';?>
+<!-- End Header -->
 
+<body>
+    
+    <form action="./actions/menu_managment_add_action.php" class="addMenuContainer" method="post">
+        <h1>افزودن منو</h1>
+        <div class="container_input">
+        <label for="foodName" >نــــــام :</label>
+        <input id="foodName" class="addInput" type="text" name="foodName">
+        </div>
+        <div class="container_input">
+        <label for="foodPrice">قیمت :</label>
+        <input id="foodPrice" class="addInput" type="number" name="foodPrice">
+        </div>
+
+        <label for="foodType" id="foodTypeLabel">نوع غذا :</label>
+        <select name="foodType" id="foodType">
+            <option value="breckFasts">صبحانه</option>
+            <option value="fastFoods">فست فود</option>
+            <option value="persianFoods">غذا ایرانـی</option>
+            <option value="italyFoods">غذا ایتالیایی</option>
+        </select>
+        <button type="submit">افزودن</button>
+    </form>
+
+
+        <!-- ----------- MENU START ------------ -->
 
         <main>
 
@@ -51,8 +85,18 @@
                         
                         <div>
                             <span><?php echo($row["price"]) ?> تومان</span>
-                            <button>
-                                <i class='fas fa-plus' style='font-size:14px'></i>
+                            <button style="background-color: #104a97;">
+                                <a href="menu_managment_edit.php?id=<?php echo($row["id"]); ?>
+                                &type=breakFasts
+                                &foodName=<?php echo($row["foodName"]); ?>
+                                &price=<?php echo($row["price"]); ?>">
+                                    <i class='fa fa-edit' style='font-size:14px;'id="btn-remove-icon"></i>
+                                </a>
+                            </button>
+                            <button style="background-color: #971010;">
+                                <a href="actions/menu_management_del_action.php?id=<?php echo($row["id"]); ?>&type=breakFasts">
+                                    <i class='fa fa-remove' style='font-size:14px;'id="btn-remove-icon"></i>
+                                </a>
                             </button>
                         </div>
                     </div>
@@ -93,8 +137,18 @@
                         
                         <div>
                             <span><?php echo($row["price"]) ?> تومان</span>
-                            <button>
-                                <i class='fas fa-plus' style='font-size:14px'></i>
+                            <button style="background-color: #104a97;">
+                                <a href="menu_managment_edit.php?id=<?php echo($row["id"]); ?>
+                                &type=fastFoods
+                                &foodName=<?php echo($row["foodName"]); ?>
+                                &price=<?php echo($row["price"]); ?>">
+                                    <i class='fa fa-edit' style='font-size:14px;'id="btn-remove-icon"></i>
+                                </a>
+                            </button>
+                            <button style="background-color: #971010;">
+                                <a href="actions/menu_management_del_action.php?id=<?php echo($row["id"]); ?>&type=fastFoods">
+                                    <i class='fa fa-remove' style='font-size:14px;'id="btn-remove-icon"></i>
+                                </a>
                             </button>
                         </div>
                     </div>
@@ -134,8 +188,18 @@
                         
                         <div>
                             <span><?php echo($row["price"]) ?> تومان</span>
-                            <button>
-                                <i class='fas fa-plus' style='font-size:14px'></i>
+                            <button style="background-color: #104a97;">
+                                <a href="menu_managment_edit.php?id=<?php echo($row["id"]); ?>
+                                &type=persianFoods
+                                &foodName=<?php echo($row["foodName"]); ?>
+                                &price=<?php echo($row["price"]); ?>">
+                                    <i class='fa fa-edit' style='font-size:14px;'id="btn-remove-icon"></i>
+                                </a>
+                            </button>
+                            <button style="background-color: #971010;">
+                                <a href="actions/menu_management_del_action.php?id=<?php echo($row["id"]); ?>&type=persianFoods">
+                                    <i class='fa fa-remove' style='font-size:14px;'id="btn-remove-icon"></i>
+                                </a>
                             </button>
                         </div>
                     </div>
@@ -174,8 +238,18 @@
                         
                         <div>
                             <span><?php echo($row["price"]) ?> تومان</span>
-                            <button>
-                                <i class='fas fa-plus' style='font-size:14px'></i>
+                            <button style="background-color: #104a97;">
+                                <a href="menu_managment_edit.php?id=<?php echo($row["id"]); ?>
+                                &type=italyFoods
+                                &foodName=<?php echo($row["foodName"]); ?>
+                                &price=<?php echo($row["price"]); ?>">
+                                    <i class='fa fa-edit' style='font-size:14px;'id="btn-remove-icon"></i>
+                                </a>
+                            </button>
+                            <button style="background-color: #971010;">
+                                <a href="actions/menu_management_del_action.php?id=<?php echo($row["id"]); ?>&type=italyFoods">
+                                    <i class='fa fa-remove' style='font-size:14px;'id="btn-remove-icon"></i>
+                                </a>
                             </button>
                         </div>
                     </div>
@@ -191,12 +265,9 @@
             <!-- italian menu style end -->
 
         </main>
-        
-        <!-- Start Footer -->
-        <?php include 'footer.php' ?>
-        <!-- End Footer -->
+    
+</body>
 
-        <script src="./scripts/main.js"></script>
-    </body>
-
-</html>
+<!-- Start Footer -->
+<?php include 'footer.php' ?>
+<!-- End Footer -->

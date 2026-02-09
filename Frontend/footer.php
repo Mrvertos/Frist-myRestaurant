@@ -1,12 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="./styles/footer.css" />
-    </head>
-    <body>
+
         <!-- Start Footer -->
         <footer id="footer">
         <div class="footer-container">
@@ -20,5 +13,9 @@
         <p class="footer-copyright">© رستوران مارکــــوس —   ساخته شده با 🍦.</p>
         </footer>
         <!-- End Footer -->
+
+        
+        <script src="./scripts/main.js"></script>
+    
     </body>
 </html>

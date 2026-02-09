@@ -71,8 +71,9 @@
 
 body{
     font-family: yekanbakh;
-    background: linear-gradient(45deg,#ff5e00,#f1b10f);
     height: 100vh;
+
+    background: linear-gradient(45deg,#ff5e00,#f1b10f);
 }
 
 /* Start styles */
@@ -82,14 +83,14 @@ body{
     background: #ffffff;
     padding: 50px 0;
     padding-top: 0;
-    margin: 12vh 20px;
+    margin: 15px 20px;
     border-radius: 0.5rem;
 }
 
 @media(min-width: 760px){
     #login{
         width: 400px;
-        margin: 15vh auto;
+        margin: 15px auto;
         margin-right: 0;
         border-radius: 0.5rem 0 0 0.5rem;
 
@@ -199,7 +200,7 @@ body{
         background-size: cover;
         
         width: 200px;
-        margin: 15vh auto;
+        margin: 15px auto;
         margin-left: 0;
         padding: 50px 0;
         border-radius: 0 0.5rem 0.5rem 0 ;

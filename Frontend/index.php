@@ -35,7 +35,7 @@
 
           <h1 class="main-title">رستوران مارکوس</h1>
           <span class="main-p">بهترین غذا های ایران</span>
-          <a href="./menu.html" class="main-gomenu">منو رستوران</a>
+          <a href="./menu.php" class="main-gomenu">منو رستوران</a>
 
         </div>
 
@@ -53,7 +53,7 @@
 
           <div class="food-text">
             <h2>ایرانی</h2>
-            <button><a href="./menu.html">منو</a></button>
+            <button><a href="./menu.php">منو</a></button>
           </div>
         </div>
 
@@ -65,7 +65,7 @@
 
           <div class="food-text">
             <h2>صبحانه</h2>
-            <button><a href="./menu.html">منو</a></button>
+            <button><a href="./menu.php">منو</a></button>
           </div>
 
         </div>
@@ -78,7 +78,7 @@
 
           <div class="food-text">
             <h2>فست فود</h2>
-            <button><a href="./menu.html">منو</a></button>
+            <button><a href="./menu.php">منو</a></button>
           </div>
 
         </div>
@@ -91,7 +91,7 @@
 
           <div class="food-text">
             <h2>ایتالیایی</h2>
-            <button><a href="./menu.html">منو</a></button>
+            <button><a href="./menu.php">منو</a></button>
           </div>
           
         </div>
